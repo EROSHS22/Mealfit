@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 1000;
+}
+
+header {
+    background-color: #FFF;
+    color: #191919;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #191919;
+}
+
+nav ul li a:hover {
+    color: #97CA2E;
+}
+
+.cuadro {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    background-color: #191919;
+    overflow: hidden;
+}
+
+.izquierda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F3F3F3;
+    font-size: 70px;
+    text-align: center;
+    padding: 20px;
+}
+
+#x {
+    font-size: large;
+    font-weight: lighter;
+}
+
+.boton {
+    padding: 10px 20px;
+    background-color: #FFF;
+    color: #0D0D0D;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #97CA2E;
+    color: #FFF;
+}
+
+.derecha {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.imagen {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.acerca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    font-weight: lighter;
+}
+
+.acer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1E1E1E;
+    font-size: 20px;
+    padding: 20px;
+    margin: 1%;
+    border-radius: 40px;
+    font-weight: lighter;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.acerca41 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    font-weight: lighter;
+    margin: 10px;
+}
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 3%;
+    background-color: #191919;
+    font-weight: lighter;
+}
+
+#servicios1 {
+    color: #FFF;
+    text-align: center;
+    margin: auto;
+}
+
+.faq {
+    font-size: 30px;
+    text-align: justify;
+    padding: 20px;
+}
+
+#f {
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px;
+    font-weight: lighter;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+    .cuadro {
+        flex-direction: row;
+        height: 700px;
+    }
+    
+    .izquierda {
+        font-size: 50px;
+        text-align: left;
+    }
+    
+    .derecha {
+        padding: 0;
+    }
+    
+    .acerca {
+        flex-direction: row;
+        padding: 50px;
+    }
+
+    .faq {
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 50px;
+    }
+
+    #f {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .izquierda {
+        font-size: 70px;
+    }
+
+    .acer {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .faq {
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-top: 50px;
+    }
+
+    #f {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}

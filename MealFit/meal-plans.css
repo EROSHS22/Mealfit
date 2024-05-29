@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 1000;
+}
+
+
+header {
+    background-color: #FFF;
+    color: #191919;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #191919;
+    
+}
+
+nav ul li a:hover {
+    color: #97CA2E;
+}
+
+header nav ul li a img {
+    height: 30px; /* Ajusta la altura de las imágenes según tus necesidades */
+    vertical-align: middle;
+}
+
+#intro {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.intro-content img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    margin: 10px;
+}
+
+.intro-text h1 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.intro-text p {
+    font-size: 18px;
+    color: #555;
+}
+
+#plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.plan {
+    flex: 1 1 30%;
+    max-width: 30%;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.plan-background {
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.plan h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.plan p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.plan button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.plan button:hover {
+    background-color: #97CA2E;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .plan {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .intro-content img {
+        width: 90%;
+    }
+}
